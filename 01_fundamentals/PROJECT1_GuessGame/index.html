@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta author="Raillen Santos">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/generals.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <title>Guess My Number</title>
+</head>
+
+<body class="bg-neutral">
+    <!-- HEADER -->
+    <header class="header flex-column">
+        <div class="header_nav flex-row">
+            <button class="btn btn-sm">Again!</button>
+            <p class="header_p">(Between 1 and 20)</p>
+        </div>
+
+        <h1 class="header_h1">Guess My Number!</h1>
+        <div class="header_secret_num flex-column">?</div>
+        <div class="header_line"></div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main flex-row">
+        <!-- LEFT -->
+        <section class="main_left flex-column">
+            <input type="number" name="guess-number" id="main_left-input" class="main_left-input" min="0" max="20">
+            <button class="main_left-btn btn btn-sm">Check!</button>
+        </section>
+
+        <!-- RIGHT -->
+        <section class="main_right flex-column">
+            <div class="main_right_guessing flex-column">
+                <p><span>🤔</span> Guess...</p>
+            </div>
+            <div class="main_right_score flex-row">
+                <span>💯</span>
+                <div>0</div>
+            </div>
+            <div class="main_right_highscore flex-row">
+                <span>🥇</span>
+                <div>0</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js" charset="utf-8"></script>
+</body>
+
+</html>

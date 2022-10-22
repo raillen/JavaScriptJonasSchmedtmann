@@ -1,0 +1,175 @@
+@import 'generals';
+@import 'variables';
+@media screen and (min-width: 0px) {
+  .header{
+    align-items: center;
+    margin-top: .8em;
+    width: 100%;
+    height: 100%;
+
+    .header_h1{
+      margin-top: 6rem;
+      font-size: 3.8rem;
+      text-align: center;
+      color: $white;
+    }
+
+    .header_nav{
+      @include alignJustifyItems(center, space-between);
+      .btn{
+        font-size: 1.2rem;
+        @include size(50%, 4rem, 10rem);
+        @include alignJustifyItems(center, center);
+      }
+      :first-child{
+        margin-left: 1rem;
+      }
+      :last-child{
+        margin-right: 1rem;
+        color: $white;
+        font-size: .95rem;
+      }
+    
+      width: 100%;
+    }
+    
+    .header_secret_num{
+      @include size(40%, 9rem, 150px);     
+      @include alignJustifyItems(center, center); 
+      font-size: 5rem;      
+      margin-top: 6rem;
+      border: 0.3rem dotted $winColor;
+      border-radius: 1rem;
+      color: $neutralColor;
+      background-color: $white;
+    }
+    .header_line{
+      position: absolute;
+      top: calc(100% - ((9rem + 1.5rem) / 2));
+      width: 100%;
+      height: 1.5rem;
+      z-index: -999;
+      border-top: 0.3rem dotted $winColor;
+      border-bottom: 0.3rem dotted $winColor;
+      background-color: $white;
+    }
+  }
+
+  .main{
+    margin-top: 8rem;
+    @include alignJustifyItems(flex-start, space-around);
+    .main_left{
+      gap: 2rem;
+      margin-left: 1rem;
+      align-items: center;
+      justify-content: flex-start;
+      .main_left-input{
+        @include size(12rem, 8rem, 300px);
+        text-align: center;
+        border-radius: 1rem;
+        font-size: 3rem;
+      }
+      .btn{
+        font-size: 1.2rem;
+        @include size(80%, 4rem, 10rem);
+        @include alignJustifyItems(center, center);
+      }
+    }
+    .main_right{
+      @include alignJustifyItems(flex-start, flex-start);
+      gap: 1.8rem;
+      color: $white;
+      margin-right: 1rem;
+      max-width: 32rem;
+      
+      .main_right_guessing,
+      .main_right_score,
+      .main_right_highscore{
+        @include alignJustifyItems(center, center);
+        gap: 0.8rem;
+        span{
+          font-size: 2rem;
+        }
+        div{
+          margin-top: .8rem;
+          font-size: 1.2rem;
+          color: $white;
+          border-color: $white;
+        }
+        p{
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 688px){
+  .header{
+    align-items: center;
+    margin-top: .8em;
+    width: 100%;
+    :first-child{
+      padding-left: .5rem;
+    }
+    :last-child{
+      padding-right: .5rem;
+      color: $white;
+      font-size: .95rem;
+    }
+    .header_h1{
+      font-size: 6rem;
+      margin-top: 12rem;
+    }
+    .header_secret_num{
+      @include size(40%, 12rem, 200px);     
+      font-size: 5rem;      
+    }
+    .header_line{
+      height: 2rem;
+      position: absolute;
+      top: calc(100% - ((12rem + 2rem) / 2));
+    }
+
+    .header_secret_num{
+      margin-top: 12rem;
+    }
+  }
+
+  .main{
+    margin-top: 8rem;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 0;
+
+    .main_left{
+      gap: 2rem;
+      margin-left: 1rem;
+      align-items: center;
+      justify-content: flex-start;
+      
+      .main_left-input{
+        @include size(18rem, 11rem, 300px);
+        font-size: 4rem;
+      }
+    }
+    .main_right{      
+      .main_right_guessing,
+      .main_right_score,
+      .main_right_highscore{
+        gap: 0.8rem;
+        span{
+          font-size: 3rem;
+        }
+        div{
+          margin-left: .8rem;
+          margin-top: .8rem;
+          font-size: 2rem;
+        }
+        p{
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  
+}

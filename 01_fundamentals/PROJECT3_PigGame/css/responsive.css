@@ -1,0 +1,11 @@
+@media screen and (max-width:900px){
+    .player{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height:inherit;
+        justify-content: space-around;
+        height: 100%;
+        width: 50vw;
+    }
+}

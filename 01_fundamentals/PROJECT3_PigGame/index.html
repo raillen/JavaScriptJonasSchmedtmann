@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Fundamentals - PigGame</title>
+</head>
+<body>
+    <main>
+        <section class="buttons">
+            <button class="btn_new-game"><span>🔄</span> new game</button>
+            <button class="btn_dice">
+                <img src="" alt="dice">
+            </button>
+            <button class="btn_row-dice"><span>🎲</span> roll dice</button>
+            <button class="btn_hold"><span>🕹️</span>hold</button>
+        </section>
+
+        <section class="board">
+            <!-- player 1 -->
+            <div class="player first activated" id="first">
+                <div>
+                    <h1 id="player-title">Player 1</h1>
+                    <p id="player-score">0</p>
+                </div>
+                <div id="player-current">
+                    <h2>Current</h2>
+                    <p>0</p>
+                </div>
+            </div>
+            <!-- player 2 -->
+            <div class="player second deactivated" id="second">
+                <div>
+                    <h1 id="player-title">Player 2</h1>
+                    <p id="player-score">0</p>
+                </div>
+                <div id="player-current">
+                    <h2>Current</h2>
+                    <p>0</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="modal">
+            <span class="trophy"></span>
+            <h1>Teste</h1>
+            <button class="btn_new-game"><span>🔄</span> new game</button>
+        </section>
+
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
