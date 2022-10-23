@@ -88,13 +88,13 @@ main,
     height: 100%;
     width: 400px;
 }
-#player-title{
+.player-title{
     font-size: 2rem;
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
 }
-#player-score{
+.player-score{
     color: #c42293;
     font-size: 3rem;
     text-align: center;
@@ -121,7 +121,7 @@ main,
     background-color:#f0f8ff8c;
     transition: .2s ease-in-out;
 }
-#player-current{
+.player-current{
     align-items: center;
     background-color: #c4184c;
     border-radius: 6px;
@@ -135,15 +135,15 @@ main,
     width: 40%;
     transition: all .3s ease-in-out;
 }
-#player-current:hover{
+.player-current:hover{
     background-color: #a5133f;
     transform: scale(.96);
 }
-#player-current h2{
+.player-current h2{
     font-size: 1.2rem;
     font-weight: 400;
 }
-#player-current p{
+.player-current p{
     font-size: 1.5rem;
 }
 

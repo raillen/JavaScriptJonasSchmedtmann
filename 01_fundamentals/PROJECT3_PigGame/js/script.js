@@ -20,8 +20,8 @@ modal.style.display = 'none'
 // ------------------------------------------------------------------ \\
 class Player {
     constructor(_player) {
-        this.score = _player.querySelector('#player-score')
-        this.current = _player.querySelector('#player-current p')
+        this.score = _player.querySelector('.player-score')
+        this.current = _player.querySelector('.player-current p')
     }
 
     currentPoints(_points){
@@ -36,7 +36,6 @@ class Player {
 }
 
 function whoWin(winner){
-    let msg = ''
     let w = winner.toLowerCase()
     modal.style.display = 'flex'
     document.querySelector('.buttons').style.display = 'none'
